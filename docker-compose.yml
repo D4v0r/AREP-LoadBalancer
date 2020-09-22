@@ -1,0 +1,38 @@
+version: '3'
+services:
+  loadbalancer:
+    build:
+      context: ./loadBalancer
+      dockerfile: Dockerfile
+    image: d4v0r/loadbalancer
+    depends_on:
+        - web
+    container_name: loadBalancer
+    ports:
+      - "8091:6000"
+  web:
+    build:
+      context: ./logService
+      dockerfile: Dockerfile
+    image: d4v0r/logservice
+    depends_on:
+        - database   
+    ports:
+      - "8085-8087:6000"
+  database:
+    image: mongo:latest
+    container_name: arep-logdb
+    environment:
+      - MONGO_INITDB_DATABASE=logdb
+      - MONGO_INITDB_ROOT_USERNAME=d4v0r
+      - MONGO_INITDB_ROOT_PASSWORD=12345
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db
+    ports:
+      - '27017-27019:27017-27019'
+    
+    command: mongod
+volumes:
+  mongodb:
+  mongodb_config:

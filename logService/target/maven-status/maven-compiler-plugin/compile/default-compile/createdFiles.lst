@@ -1,0 +1,6 @@
+edu\escuelaing\arep\entitis\Message.class
+edu\escuelaing\arep\persistence\impl\LogPersistenceMongoImpl.class
+edu\escuelaing\arep\persistence\impl\mongo\DBConnection.class
+edu\escuelaing\arep\services\LogServices.class
+edu\escuelaing\arep\LogAPI.class
+edu\escuelaing\arep\persistence\LogPersistence.class
