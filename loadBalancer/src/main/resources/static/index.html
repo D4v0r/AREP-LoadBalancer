@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Message Logger</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+</head>
+<body>
+<! -- Header -->
+<div class="header">
+    <h1>Message Logger</h1>
+</div>
+<! -- Content -->
+<div class="row">
+    <div class="main">
+        <div class="cinema-line">
+            <h2>Message</h2>
+            <form class="form-inline" >
+                <label for="content">Content:</label>
+                <input type="text" id="content" placeholder="Type something" name="content">
+                <button type="button" style="border-radius: 12px" class="button"
+                        onClick="app.addMessage()">Send</button>
+            </form>
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th>#</th>
+                <th>Message</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

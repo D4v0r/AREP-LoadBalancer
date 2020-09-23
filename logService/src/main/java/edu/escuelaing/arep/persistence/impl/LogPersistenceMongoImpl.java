@@ -2,16 +2,16 @@ package edu.escuelaing.arep.persistence.impl;
 
 import edu.escuelaing.arep.entitis.Message;
 import edu.escuelaing.arep.persistence.LogPersistence;
-import edu.escuelaing.arep.persistence.impl.mongo.DBConnection;
+import edu.escuelaing.arep.persistence.impl.mongo.DatabaseConnection;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class LogPersistenceMongoImpl implements LogPersistence {
-    DBConnection dbConnection = new DBConnection();
+    DatabaseConnection dbConnection = new DatabaseConnection();
 
 
     @Override
-    public ArrayList<Message> readMessages() {
+    public List<Message> readMessages() {
         return dbConnection.loadMessages();
     }
 

@@ -1,6 +1,6 @@
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\persistence\impl\mongo\DBConnection.java
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\persistence\impl\LogPersistenceMongoImpl.java
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\LogAPI.java
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\entitis\Message.java
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\services\LogServices.java
-C:\Users\Usuario\Desktop\Noveno Semestre\AREP\Laboratorios\Lab5\LAB5\logService\src\main\java\edu\escuelaing\arep\persistence\LogPersistence.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/LogAPI.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/persistence/LogPersistence.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/persistence/impl/LogPersistenceMongoImpl.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/entitis/Message.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/persistence/impl/mongo/DatabaseConnection.java
+/Users/santiago/Downloads/AREP-LoadBalancer/logService/src/main/java/edu/escuelaing/arep/services/LogServices.java

@@ -1,5 +1,7 @@
 package edu.escuelaing.arep;
 
+import edu.escuelaing.arep.client.HttpClient;
+
 import static spark.Spark.*;
 /**
  * Hello world!
@@ -9,8 +11,24 @@ public class WebApp
 {
     public static void main( String... args )
     {
+        HttpClient httpClient = new HttpClient();
         port(getPort());
-        get("hello", (req, res) -> "Hello Docker!");
+        staticFileLocation("/static");
+        get("/", (req, res) -> {
+            res.redirect("/index.tml");
+            res.status(200);
+            return "";
+        });
+
+        get("/messages", (req, res) ->{
+            httpClient.roundRobin();
+            return httpClient.getMessages("/messages");
+        });
+        post("/messages", (req, res) -> {
+            httpClient.roundRobin();
+            httpClient.postMessages(req.body(), "/messages");
+            return "";
+        });
     }
 
     private static int getPort() {

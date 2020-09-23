@@ -22,7 +22,6 @@ public class LogAPI
         get("/messages", (req, res) -> {
             res.status(200);
             res.type("application/json");
-            System.out.println("HOLA PERRA");
             List<Message> messages = log.getLastTenMessages();
             if (messages == null) {
                 res.status(400);

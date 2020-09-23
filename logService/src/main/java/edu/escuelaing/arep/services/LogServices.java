@@ -15,7 +15,7 @@ public class LogServices {
     }
 
     public List<Message> getLastTenMessages(){
-        ArrayList<Message> messages = persistence.readMessages();
+        List<Message> messages = persistence.readMessages();
         //return new ArrayList<>(messages.subList(messages.size() - 11, messages.size()));
         return messages;
     }
