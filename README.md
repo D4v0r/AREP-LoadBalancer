@@ -9,11 +9,6 @@
 
 ## Instalación
 
-### Requisitos
-
-- Docker Compose/ Docker Desktop
-- Java 8
-- Git
 
 1. Primero debemos clonar el respositorio utlizando el siguiente comando:
 
@@ -33,6 +28,12 @@ git clone https://github.com/D4v0r/AREP-LoadBalancer
 sh init.sh
 ```
 
+### Requisitos
+
+- Docker Compose/ Docker Desktop
+- Java 8
+- Git
+
 
 
 ## Despliegue
@@ -41,6 +42,16 @@ La aplicación se encuentra desplegada en una máquina de EC2.
 [App](http://ec2-54-164-164-190.compute-1.amazonaws.com:8091/)
 
 ![](https://media.discordapp.net/attachments/749330138407370856/759191528643625001/unknown.png)
+
+
+## Stack Tecnológico
+
+- Java 8
+- Maven
+- Spark
+- Docker
+- HTML5/ CSS3 / JS
+- AWS EC2
 
 
 
