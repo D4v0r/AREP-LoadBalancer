@@ -15,7 +15,7 @@
 - Java 8
 - Git
 
-1. Primero debemo clonar el respositorio utlizando el siguiente comando:
+1. Primero debemos clonar el respositorio utlizando el siguiente comando:
 
 ```
 git clone https://github.com/D4v0r/AREP-LoadBalancer
